@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <img id="slide" width="500px" height="500px" src="download.jpg" alt="hlo there">
+        </div>
+    </body>
+        <script>
+            var i=0;
+            var j=["download.jpg", "rahul.jpg","risabh.jpg"];
+            var delay= 2000;
+        
+            function codio(){
+                document.getElementById("slide").src= j[i];
+                if(i<j.length-1){
+                    i++;
+                }else{
+                    i=0;
+                }
+            }
+            setInterval(codio,delay);
+        </script>
+</html>
